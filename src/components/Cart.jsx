@@ -1,9 +1,11 @@
+import "../assets/styles/cart.css";
+
 const Cart = () => {
   const chapmanTalkin = { name: "Talkin' bout a revolution", price: 35 };
   const sadePromise = { name: "Promise", price: 15 };
   const badJackson = { name: "Bad", price: 19 };
   return (
-    <div>
+    <div className="cart">
       <h3>Panier : </h3>
       <ul>
         <li>
