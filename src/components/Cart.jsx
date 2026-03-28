@@ -19,7 +19,7 @@ const Cart = () => {
         </li>
       </ul>
       <p>
-        Total : {chapmanTalkin.price + sadePromise.price + badJackson.price}
+        Total : {chapmanTalkin.price + sadePromise.price + badJackson.price}€
       </p>
     </div>
   );

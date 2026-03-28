@@ -1,17 +1,17 @@
 import { vinylsList } from "../datas/vinylsList";
+import "../assets/styles/shoppingList.css";
 
 const ShoppingList = () => {
   const categories = vinylsList.reduce((acc, vinyl) => {
     if (!acc.includes(vinyl.category)) {
       acc.push(vinyl.category);
-      console.log(acc);
     }
     return acc;
   }, []);
 
   return (
     <>
-      <div>
+      <div className="vs-vinyl-list">
         <h4>Catégories : </h4>
         <ul>
           {categories.map((cat) => {
@@ -19,9 +19,15 @@ const ShoppingList = () => {
           })}
         </ul>
       </div>
-      <ul>
+      <ul className="vs-vinyl-list">
         {vinylsList.map((vinyl) => {
-          return <li key={`${vinyl.id}`}>{vinyl.name}</li>;
+          return (
+            <li key={`${vinyl.id}`} className="vs-vinyl-item">
+              {vinyl.isBestSale && <span>🔥 </span>}
+              {vinyl.name}
+              {vinyl.isSpecialOffer && <div className="vs-promo">promo</div>}
+            </li>
+          );
         })}
       </ul>
     </>

@@ -3,3 +3,8 @@
   background: #f9fce4;
   color: rgb(37, 37, 37);
 }
+
+.cart ul {
+  width: 100%;
+  list-style: disc;
+}
