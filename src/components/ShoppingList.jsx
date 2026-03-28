@@ -12,7 +12,7 @@ const ShoppingList = () => {
   return (
     <>
       <div className="vs-vinyl-list">
-        <h4>Catégories : </h4>
+        <h4>CATEGORIES </h4>
         <ul>
           {categories.map((cat) => {
             return <li key={cat}>{cat}</li>;
