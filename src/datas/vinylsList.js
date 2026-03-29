@@ -6,6 +6,7 @@ export const vinylsList = [
     isBestSale: true,
     isSpecialOffer: false,
     rarity: 3,
+    cover: "te",
   },
   {
     name: "Promise",
@@ -14,6 +15,7 @@ export const vinylsList = [
     isBestSale: false,
     isSpecialOffer: false,
     rarity: 1,
+    cover: "te",
   },
   {
     name: "Bad",
@@ -22,6 +24,7 @@ export const vinylsList = [
     isBestSale: true,
     isSpecialOffer: false,
     rarity: 1,
+    cover: "te",
   },
   {
     name: "Nevermind",
@@ -30,6 +33,7 @@ export const vinylsList = [
     isBestSale: true,
     isSpecialOffer: true,
     rarity: 1,
+    cover: "te",
   },
   {
     name: "Human",
@@ -38,6 +42,7 @@ export const vinylsList = [
     isBestSale: false,
     isSpecialOffer: false,
     rarity: 2,
+    cover: "te",
   },
   {
     name: "Breakfast in America",
@@ -46,6 +51,7 @@ export const vinylsList = [
     isBestSale: false,
     isSpecialOffer: false,
     rarity: 1,
+    cover: "te",
   },
   {
     name: "Legend",
@@ -54,6 +60,7 @@ export const vinylsList = [
     isBestSale: false,
     isSpecialOffer: true,
     rarity: 1,
+    cover: "te",
   },
   {
     name: "Exodus",
@@ -62,6 +69,7 @@ export const vinylsList = [
     isBestSale: true,
     isSpecialOffer: false,
     rarity: 3,
+    cover: "te",
   },
   {
     name: "Curtains call 2",
@@ -69,5 +77,6 @@ export const vinylsList = [
     id: "9vn",
     isBestSale: false,
     isSpecialOffer: false,
+    cover: "te",
   },
 ];
