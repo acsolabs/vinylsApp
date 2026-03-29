@@ -1,4 +1,5 @@
 import { vinylsList } from "../datas/vinylsList";
+import RarityScale from "./RarityScale";
 import "../assets/styles/shoppingList.css";
 
 const ShoppingList = () => {
@@ -26,6 +27,7 @@ const ShoppingList = () => {
               {vinyl.isBestSale && <span>🔥 </span>}
               {vinyl.name}
               {vinyl.isSpecialOffer && <div className="vs-promo">promo</div>}
+              <RarityScale rarityValue={vinyl.rarity} />
             </li>
           );
         })}
