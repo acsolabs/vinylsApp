@@ -1,6 +1,7 @@
 import { vinylsList } from "../datas/vinylsList";
 import RarityScale from "./RarityScale";
 import "../assets/styles/shoppingList.css";
+import VinylItem from "./VinylItem";
 
 const ShoppingList = () => {
   const categories = vinylsList.reduce((acc, vinyl) => {
@@ -21,14 +22,11 @@ const ShoppingList = () => {
         </ul>
       </div>
       <ul className="vs-vinyl-list">
-        {vinylsList.map((vinyl) => {
+        {vinylsList.map(({ name, cover, id, artist }) => {
           return (
-            <li key={`${vinyl.id}`} className="vs-vinyl-item">
-              {vinyl.isBestSale && <span>🔥 </span>}
-              {vinyl.name}
-              {vinyl.isSpecialOffer && <div className="vs-promo">promo</div>}
-              <RarityScale rarityValue={vinyl.rarity} />
-            </li>
+            <>
+              <VinylItem key={id} cover={cover} name={name} artist={artist} />
+            </>
           );
         })}
       </ul>
