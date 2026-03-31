@@ -1,7 +1,6 @@
 import "../assets/styles/vinylItem.css";
-import RarityScale from "./RarityScale";
 
-const VinylItem = ({ name, cover, artist, isSpecialOffer }) => {
+const VinylItem = ({ name, cover, artist, isSpecialOffer, year }) => {
   console.log("test");
   return (
     <li className="vs-vinyl-item">
@@ -11,9 +10,9 @@ const VinylItem = ({ name, cover, artist, isSpecialOffer }) => {
         alt={"pochette vinyle de " + name}
       />
       <p>{name}</p>
-      <span>{artist}</span>
+      <span className="artist">{artist}</span>
       {isSpecialOffer && <div className="vs-promo">promo</div>}
-      {/* <RarityScale rarityValue={rarity} /> */}
+      <p className="year">{year}</p>
     </li>
   );
 };

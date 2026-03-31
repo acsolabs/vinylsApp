@@ -1,5 +1,4 @@
 import { vinylsList } from "../datas/vinylsList";
-import RarityScale from "./RarityScale";
 import "../assets/styles/shoppingList.css";
 import VinylItem from "./VinylItem";
 
@@ -22,10 +21,16 @@ const ShoppingList = () => {
         </ul>
       </div>
       <ul className="vs-vinyl-list">
-        {vinylsList.map(({ name, cover, id, artist }) => {
+        {vinylsList.map(({ name, cover, id, artist, year }) => {
           return (
             <>
-              <VinylItem key={id} cover={cover} name={name} artist={artist} />
+              <VinylItem
+                key={id}
+                cover={cover}
+                name={name}
+                artist={artist}
+                year={year}
+              />
             </>
           );
         })}

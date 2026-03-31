@@ -8,6 +8,7 @@ export const vinylsList = [
     isSpecialOffer: false,
     rarity: 3,
     cover: "tr_talkin.jpg",
+    year: 1988,
   },
   {
     name: "Promise",
@@ -18,6 +19,7 @@ export const vinylsList = [
     isSpecialOffer: false,
     rarity: 1,
     cover: "s_promise.jpg",
+    year: 1985,
   },
   {
     name: "Bad",
@@ -28,6 +30,7 @@ export const vinylsList = [
     isSpecialOffer: false,
     rarity: 1,
     cover: "mj_bad.jpg",
+    year: 1987,
   },
   {
     name: "Nevermind",
@@ -38,6 +41,7 @@ export const vinylsList = [
     isSpecialOffer: true,
     rarity: 1,
     cover: "n_nevermind.jpg",
+    year: 1991,
   },
   {
     name: "Human",
@@ -48,6 +52,7 @@ export const vinylsList = [
     isSpecialOffer: false,
     rarity: 2,
     cover: "r_human.jpg",
+    year: 2017,
   },
   {
     name: "Breakfast in America",
@@ -58,6 +63,7 @@ export const vinylsList = [
     isSpecialOffer: false,
     rarity: 1,
     cover: "s_breakfast.jpg",
+    year: 1979,
   },
   {
     name: "Legend",
@@ -68,6 +74,7 @@ export const vinylsList = [
     isSpecialOffer: true,
     rarity: 1,
     cover: "bm_legend.jpg",
+    year: 1984,
   },
   {
     name: "Exodus",
@@ -78,6 +85,7 @@ export const vinylsList = [
     isSpecialOffer: false,
     rarity: 3,
     cover: "bm_exodus.jpg",
+    year: 1977,
   },
   {
     name: "Curtains call 2",
@@ -87,5 +95,16 @@ export const vinylsList = [
     isBestSale: false,
     isSpecialOffer: false,
     cover: "e_curtain2.jpg",
+    year: 2005,
+  },
+  {
+    name: "The Velvet Underground & Nico",
+    artist: "Velvet Underground",
+    category: "rock",
+    id: "",
+    isBestSale: false,
+    isSpecialOffer: false,
+    cover: "vu_underground.jpg",
+    year: 1967,
   },
 ];
