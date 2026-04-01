@@ -1,9 +1,11 @@
 import "../assets/styles/vinylItem.css";
 
 const VinylItem = ({ name, cover, artist, isSpecialOffer, year }) => {
-  console.log("test");
+  const handleClick = ({ VinylItem }) => {
+    console.log("j'ai clické sur", { VinylItem });
+  };
   return (
-    <li className="vs-vinyl-item">
+    <li className="vs-vinyl-item" onClick={handleClick}>
       <img
         src={`/img/${cover}`}
         className="vs-vinyl-item-cover"
