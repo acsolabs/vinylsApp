@@ -1,5 +1,6 @@
 import "../assets/styles/banner.css";
 import logo from "../assets/logo.png";
+import styled from "styled-components";
 
 const Banner = () => {
   return (
@@ -11,5 +12,7 @@ const Banner = () => {
     </div>
   );
 };
+
+const BannerStyled = styled.div``;
 
 export default Banner;
