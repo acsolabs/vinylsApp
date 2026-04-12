@@ -15,7 +15,6 @@ const Banner = () => {
 
 const BannerStyled = styled.div`
   h1 {
-    color: whites;
   }
 `;
 

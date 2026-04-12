@@ -39,4 +39,6 @@ const ShoppingList = () => {
   );
 };
 
+const ShoppingListStyled = styled.div``;
+
 export default ShoppingList;
